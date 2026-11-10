@@ -15,10 +15,10 @@ node{
      stage("Deploy"){
         echo "Deploying the project"
         sh """
-            sudo mkdir -p /var/www
-            sudo mkdir -p ${app}
-            sudo rm -rf ${app}/*
-            sudo cp -r * ${app}/  
+            mkdir -p /var/www
+            mkdir -p ${app}
+            rm -rf ${app}/*
+            cp -r * ${app}/  
            
 
            cd ${app}
