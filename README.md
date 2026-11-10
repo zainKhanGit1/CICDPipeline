@@ -19,11 +19,11 @@ Jenkins itself is also hosted on an AWS EC2 instance .
 
 ## Subnet Calculator website features
 
-- **Instant IPv4 subnet analysis:** enter any CIDR (e.g. `10.0.0.0/16`) to get the network address, subnet mask, wildcard mask and broadcast address.
-- **Host range and capacity:** shows the first and last usable IPs, total addresses and usable host count, with correct handling of `/31` and `/32` edge cases.
-- **Input validation:** checks the IP octets and prefix length, with clear error messages for invalid CIDR notation.
-- **PDF report export:** download a formatted subnet report for documentation or sharing, generated in the browser with jsPDF.
-- **Responsive, theme-aware UI:** built with React and Vite, runs entirely client-side, and supports light and dark mode on desktop and mobile.
+- Instant IPv4 subnet analysis: enter any CIDR (e.g. `10.0.0.0/16`) to get the network address, subnet mask, wildcard mask and broadcast address.
+- Host range and capacity: shows the first and last usable IPs, total addresses and usable host count, with correct handling of `/31` and `/32` edge cases.
+- Input validation: checks the IP octets and prefix length, with clear error messages for invalid CIDR notation.
+- PDF report export:download a formatted subnet report for documentation or sharing, generated in the browser with jsPDF.
+- Responsive, theme-aware UI: built with React and Vite, runs entirely client-side, and supports light and dark mode on desktop and mobile.
 
 
 ## Technologies Used
@@ -53,25 +53,29 @@ Two EC2 instances are used:
 
 Jenkins runs on   port 8080  , while   port 80 is allowed for incoming HTTP web traffic   to access the deployed website.
 
+![alt text](image-4.png)
+
 ## Project Screenshots
 
 ### 1. Jenkins Pipeline Build
 
-Attach a screenshot showing a successful Jenkins pipeline build.
 
-`![Jenkins Build](screenshots/jenkins-build.png)`
+![alt text](image.png)
 
 ### 2. GitHub Webhook Configuration
 
-Attach a screenshot showing the configured GitHub webhook responsible for automatically triggering Jenkins builds.
+![alt text](image-3.png)
 
-`![GitHub Webhook](screenshots/github-webhook.png)`
 
-### 3. Deployed Website
+### 3. Deployed Website 
 
-Attach a screenshot showing the successfully deployed website running on the AWS EC2 instance.
 
-`![Deployed Website](screenshots/deployed-website.png)`
+
+![alt text](image-1.png)
+
+### 4. Downloaded pdf with details of network.
+![alt text](image-2.png)
+
 
 ## Key Features
 
