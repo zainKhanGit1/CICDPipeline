@@ -2,7 +2,7 @@ node{
     def app = "/var/www/SubnetCalculator"
     stage("Clean"){
         echo "Cleaning Repo"
-        DeleteDir();
+        deleteDir();
     }
      stage("Clone"){
         echo "Cloning Project"
